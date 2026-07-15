@@ -123,6 +123,21 @@
   --text-9xl: var(--text-9xl);
 }
 
+@layer components {
+  .primary-button, .secondary-button {
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .primary-button:hover, .secondary-button:hover {
+    transform: scale(1.05);
+  }
+  .card {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .card:hover {
+    transform: translateY(-4px);
+  }
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 0);
