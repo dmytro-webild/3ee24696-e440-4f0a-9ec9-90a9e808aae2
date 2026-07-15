@@ -27,7 +27,7 @@ export default function HomePage() {
       }}
       items={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/saturn-sky-night-background-asset-game-2d-futuristic-generative-ai_191095-2092.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/saturn-sky-night-background-asset-game-2d-futuristic-generative-ai_191095-2092.jpg?_wi=1",
         },
         {
           imageSrc: "http://img.b2bpic.net/free-photo/3d-graph-computer-illustration_23-2151884889.jpg",
