@@ -220,7 +220,12 @@ const AboutInline = () => {
 
 export default function AboutSection() {
   return (
-    <div data-webild-section="about" data-section="about" id="about">
+    <div 
+      data-webild-section="about" 
+      data-section="about" 
+      id="about"
+      className="[&_img]:rounded-[40%_60%_70%_30%_/_40%_50%_60%_50%] [&_img]:shadow-[0_0_40px_rgba(255,255,255,0.1)] [&_img]:transition-all [&_img]:duration-[3000ms] hover:[&_img]:rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] [&_img]:content-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80')] [&_img]:object-cover"
+    >
       <AboutInline />
     </div>
   );
