@@ -51,7 +51,7 @@ const HeroInline = () => {
       <HeroBackgroundSlot />
       <AuroraBackground position="absolute" />
       <HorizonGlowBackground position="absolute" />
-      <CursorTrail color={{ r: 0, g: 255, b: 255 }} />
+      <CursorTrail color={{ r: 128, g: 200, b: 255 }} />
 
       <div className="absolute inset-0 bg-black/10 pointer-events-none" />
 
