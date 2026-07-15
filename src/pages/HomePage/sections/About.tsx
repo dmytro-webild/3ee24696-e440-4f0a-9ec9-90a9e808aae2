@@ -10,7 +10,7 @@ const media = [
     imageSrc: "http://img.b2bpic.net/free-photo/goal-oriented-entrepreneur-luxurious-corporate-office-plans-strategy_482257-128191.jpg"
   },
   {
-    imageSrc: "http://img.b2bpic.net/free-photo/general-director-using-chroma-key-template-modern-gadget_482257-124351.jpg"
+    imageSrc: "http://img.b2bpic.net/free-photo/general-director-using-chroma-key-template-modern-gadget_482257-124351.jpg?_wi=1"
   },
   {
     imageSrc: "http://img.b2bpic.net/free-photo/male-real-estate-agent-doing-business-showing-house-potential-buying-couple_23-2150164670.jpg"
@@ -220,12 +220,7 @@ const AboutInline = () => {
 
 export default function AboutSection() {
   return (
-    <div 
-      data-webild-section="about" 
-      data-section="about" 
-      id="about"
-      className="[&_img]:rounded-[40%_60%_70%_30%_/_40%_50%_60%_50%] [&_img]:shadow-[0_0_40px_rgba(255,255,255,0.1)] [&_img]:transition-all [&_img]:duration-[3000ms] hover:[&_img]:rounded-[60%_40%_30%_70%_/_60%_30%_70%_40%] [&_img]:content-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80')] [&_img]:object-cover"
-    >
+    <div data-webild-section="about" data-section="about" id="about">
       <AboutInline />
     </div>
   );
