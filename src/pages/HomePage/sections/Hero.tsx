@@ -7,6 +7,7 @@ import ImageOrVideo from "@/components/ui/ImageOrVideo";
 import AvatarGroup from "@/components/ui/AvatarGroup";
 import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
 import AuroraBackground from "@/components/ui/AuroraBackground";
+import HorizonGlowBackground from "@/components/ui/HorizonGlowBackground";
 import CursorTrail from "@/components/ui/CursorTrail";
 
 const avatarsSrc = [
@@ -49,9 +50,10 @@ const HeroInline = () => {
     >
       <HeroBackgroundSlot />
       <AuroraBackground position="absolute" />
-      <CursorTrail color={{ r: 200, g: 155, b: 255 }} />
+      <HorizonGlowBackground position="absolute" />
+      <CursorTrail color={{ r: 0, g: 255, b: 255 }} />
 
-      <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/10 pointer-events-none" />
 
       <div className="relative z-10 flex-1 flex items-center justify-center pb-8">
         <div className="flex flex-col items-center gap-6 w-content-width mx-auto text-center text-white">
