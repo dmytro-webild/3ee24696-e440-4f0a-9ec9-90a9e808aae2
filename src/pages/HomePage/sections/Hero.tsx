@@ -11,7 +11,7 @@ export default function HeroSection(): React.JSX.Element {
         secondaryButton={{"href":"#services","text":"View Our Services"}}
         primaryButton={{"href":"#contact","text":"Start Your Project"}}
         imageSrc="http://img.b2bpic.net/free-photo/saturn-sky-night-background-asset-game-2d-futuristic-generative-ai_191095-2092.jpg?_wi=1"
-        title="Stop Losing Opportunities. Start Growing Smarter. We build systems that help your business stay connected, respond faster, and turn more customers into results."
+        title="Elevating your brand with sophisticated AI-driven solutions."
         avatarsLabel="Trusted by industry leaders"
       />
     </div>
