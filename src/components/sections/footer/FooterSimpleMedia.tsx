@@ -1,6 +1,5 @@
 import { useButtonClick } from "@/hooks/useButtonClick";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
-import Button from "@/components/ui/Button";
 
 type FooterLink = {
   label: string;
@@ -65,7 +64,7 @@ const FooterSimpleMedia = ({
       <div className="w-full py-15 primary-button text-primary-cta-text">
         <div className="w-content-width mx-auto">
           <div className="flex flex-col md:flex-row gap-10 md:gap-0 justify-between items-start mb-10">
-            <h2 className="text-4xl font-semibold"><span className="text-5xl font-black text-primary-cta-text opacity-100">{brand}</span></h2>
+            <h2 className="text-4xl font-semibold"><span className="text-3xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary-cta to-accent">{brand}</span></h2>
 
             <div className="w-full md:w-fit flex flex-wrap gap-y-10 md:gap-12">
               {columns.map((column) => (
@@ -79,21 +78,12 @@ const FooterSimpleMedia = ({
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-primary-cta-text/20 gap-6">
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-              <span className="text-sm opacity-50">{copyright}</span>
-              <div className="flex items-center gap-4 text-sm font-medium opacity-80">
-                <span>contact@novera.com</span>
-                <span>+1 (555) 123-4567</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-3">
-                {links.map((link) => (
-                  <FooterBottomLink key={link.label} label={link.label} href={link.href} onClick={link.onClick} />
-                ))}
-              </div>
-              <Button text="Book Now" variant="secondary" href="#contact" className="!py-2 !px-4 text-sm" />
+          <div className="flex items-center justify-between pt-8 border-t border-primary-cta-text/20">
+            <span className="text-sm opacity-50">{copyright}</span>
+            <div className="flex items-center gap-3">
+              {links.map((link) => (
+                <FooterBottomLink key={link.label} label={link.label} href={link.href} onClick={link.onClick} />
+              ))}
             </div>
           </div>
         </div>
