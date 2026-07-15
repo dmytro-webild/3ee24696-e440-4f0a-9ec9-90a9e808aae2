@@ -7,7 +7,6 @@ import ImageOrVideo from "@/components/ui/ImageOrVideo";
 import AvatarGroup from "@/components/ui/AvatarGroup";
 import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
 import AuroraBackground from "@/components/ui/AuroraBackground";
-import CursorTrail from "@/components/ui/CursorTrail";
 
 const avatarsSrc = [
   "http://img.b2bpic.net/free-photo/confident-pretty-young-woman-looking-camera_1262-16156.jpg",
@@ -49,9 +48,8 @@ const HeroInline = () => {
     >
       <HeroBackgroundSlot />
       <AuroraBackground position="absolute" />
-      <CursorTrail color={{ r: 200, g: 155, b: 255 }} />
 
-      <div className="absolute inset-0 bg-black/30 pointer-events-none" />
+      <div className="absolute inset-0 bg-black/30" />
 
       <div className="relative z-10 flex-1 flex items-center justify-center pb-8">
         <div className="flex flex-col items-center gap-6 w-content-width mx-auto text-center text-white">
@@ -71,7 +69,7 @@ const HeroInline = () => {
             transition={{ staggerChildren: 0.1, delayChildren: 0.25 }}
           >
             {(() => {
-              const titleWords = "Never Lose a Customer Again.".split(" ");
+              const titleWords = "Elevating your brand with sophisticated AI-driven solutions.".split(" ");
               const highlightWords = undefined ? undefined.split(" ") : [];
               const allWords = [...titleWords, ...highlightWords];
 
@@ -95,15 +93,6 @@ const HeroInline = () => {
               });
             })()}
           </motion.h1>
-
-          <motion.p
-            className="text-xl md:text-2xl text-white/80 max-w-3xl mt-2"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-          >
-            Websites and smart business systems built to capture every opportunity, even when you're busy.
-          </motion.p>
 
           <div className="flex flex-wrap justify-center gap-3 mt-6">
             <motion.div
