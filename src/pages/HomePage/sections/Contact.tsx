@@ -8,7 +8,7 @@ export default function ContactSection(): React.JSX.Element {
     <div data-webild-section="contact" data-section="contact" id="contact">
       <ContactParallaxCard
         inputs={[{"type":"text","placeholder":"Your Name","name":"name"},{"type":"email","name":"email","placeholder":"Your Email"}]}
-        imageSrc="http://img.b2bpic.net/free-photo/general-director-using-chroma-key-template-modern-gadget_482257-124351.jpg"
+        imageSrc="http://img.b2bpic.net/free-photo/general-director-using-chroma-key-template-modern-gadget_482257-124351.jpg?_wi=2"
         buttonText="Send Message"
         textarea={{"placeholder":"Your Message","name":"message"}}
         footerLink={{"imageSrc":"http://img.b2bpic.net/free-photo/goal-oriented-entrepreneur-luxurious-corporate-office-plans-strategy_482257-128191.jpg","href":"#","text":"Book a Call"}}
