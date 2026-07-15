@@ -15,7 +15,7 @@ const AboutInline = () => {
     <section aria-label="About section" className="py-20">
       <div className="w-content-width mx-auto flex flex-col gap-2 items-center">
         <TextAnimation
-          text={"…"}
+          text={"About Us"}
           variant={"fade-blur"}
           gradientText={false}
           tag="h2"
